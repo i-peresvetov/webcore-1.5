@@ -1,10 +1,11 @@
-/* @font-face {
+ @font-face {
   font-family: "TTLakes";
   font-style: normal;
   font-weight: 400;
-  src: local("TTLakes-Regular"), url("fonts/TTLakes-Regular.woff") format("woff");
+  src: local("TTLakes-Regular"), url("assets/TTLakes-Regular.woff") format("woff");
 }
 
+/*
 @font-face {
   font-family: "TTLakes";
   font-style: normal;
@@ -45,3 +46,140 @@ body {
   font-family: "TTLakes", Arial, sans-serif;
 }
 
+.repairing-brands {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #f8f8f8;
+}
+
+.repairing-brands__h2-title-background {
+  background: linear-gradient(90deg, #f8f8f8 1.39%, #fff 100%);
+  padding: 16px 16px;
+}
+
+@media (min-width: 768px) {
+  .repairing-brands__h2-title-background {
+    padding: 16px 24px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .repairing-brands__h2-title-background {
+    padding: 16px 32px;
+  }
+}
+
+.repairing-brands__h2-title {
+  color: #7e7e82;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+}
+
+.brand-list-container {
+  padding: 16px;
+}
+
+
+@media (min-width: 768px) {
+  .brand-list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    padding: 24px 24px 0px 24px;
+    overflow: hidden;
+  }
+
+  .brand-list-container--minimazed {
+    height: 185px;
+  }
+  
+  .brand-list-container--expanded {
+    height: auto;
+  }
+}
+
+@media (min-width: 1120px) {
+  .brand-list-container {
+    padding: 24px 32px 0px 32px;
+  }
+}
+
+
+
+
+.brand-card {
+  min-height: 72px;
+  width: 100%;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFF;
+  padding: 0 16px;
+}
+
+.brand-card__link {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background: url(assets/go.svg) no-repeat 50% 50%;
+}
+
+.brand-list__paginator {
+  position: static;
+  margin-bottom: 38px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  line-height: 20px;
+  font-size: 14px;
+  background-color: #b5b6bc;  
+}
+
+.repairing-brands__expand-button {
+  margin: 24px 24px 34px 24px;
+}
+
+@media (min-width: 1120px) {
+  .repairing-brands__expand-button {
+    margin: 24px 32px 34px 32px;
+  }
+}
+
+.expand-button {
+  display: none;
+  align-items: center;
+  padding-left: 32px;
+  height: 24px;
+  color: #1b1c21;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.2px;
+  border: 0;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: contain;
+}
+
+@media (min-width: 768px) {
+  .expand-button {
+    display: flex;
+  }
+}
+
+.expand-button--show {
+  background-image: url(assets/expand.svg);  
+}
+
+.expand-button--hide {
+  background-image: url(assets/hide.svg);
+  margin-bottom: 14px;
+}
