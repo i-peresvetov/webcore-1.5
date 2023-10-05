@@ -98,9 +98,6 @@ body {
   }
 }
 
-.brand-list__swiper-slide {
-
-}
 
 .brand-card {
   min-height: 72px;  
@@ -111,12 +108,16 @@ body {
   justify-content: space-between;
   background-color: #FFF;
   padding: 0 16px;
+
+  width: 82%;
+  margin: 16px auto;
 }
 
 @media (min-width: 768px) {
   .brand-card {
     width: 100%;
     box-sizing: border-box;
+    margin: 0;
   }
 }
 
