@@ -5,21 +5,6 @@
   src: local("TTLakes-Regular"), url("assets/TTLakes-Regular.woff") format("woff");
 }
 
-/*
-@font-face {
-  font-family: "TTLakes";
-  font-style: normal;
-  font-weight: 500;
-  src: local("TTLakes-Bold"), url("fonts/TTLakes-Medium.woff") format("woff");
-}
-
-@font-face {
-  font-family: "TTLakes";
-  font-style: normal;
-  font-weight: 700;
-  src: local("TTLakes-Bold"), url("fonts/TTLakes-Bold.woff") format("woff");
-} */
-
 html {
   box-sizing: border-box;
 }
@@ -42,33 +27,43 @@ a {
   color: black;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 body {
   font-family: "TTLakes", Arial, sans-serif;
 }
 
-.repairing-brands {
+/******************************************/
+/******************************************/
+/******************************************/
+
+.repairing-brands { /*********************************************НЕ СВАЙПЕР******************************/
   background-color: #f8f8f8;
   border-bottom: 1px solid #f8f8f8;
 }
 
-.repairing-brands__h2-title-background {
+.repairing-brands__h2-title-background { /*********************************************НЕ СВАЙПЕР******************************/
   background: linear-gradient(90deg, #f8f8f8 1.39%, #fff 100%);
   padding: 16px 16px;
 }
 
 @media (min-width: 768px) {
-  .repairing-brands__h2-title-background {
+  .repairing-brands__h2-title-background { /*********************************************НЕ СВАЙПЕР******************************/
     padding: 16px 24px;
   }
 }
 
 @media (min-width: 1120px) {
-  .repairing-brands__h2-title-background {
+  .repairing-brands__h2-title-background { /*********************************************НЕ СВАЙПЕР******************************/
     padding: 16px 32px;
   }
 }
 
-.repairing-brands__h2-title {
+.repairing-brands__h2-title { /*********************************************НЕ СВАЙПЕР******************************/
   color: #7e7e82;
   font-size: 16px;
   font-style: normal;
@@ -78,41 +73,37 @@ body {
   text-transform: uppercase;
 }
 
-.brand-list-container {
-  padding: 16px;
-}
-
-
 @media (min-width: 768px) {
-  .brand-list-container {
+  .brand-list-container { /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!СВАЙПЕР__когда отключен!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 16px;
     padding: 24px 24px 0px 24px;
     overflow: hidden;
+    box-sizing: border-box;
   }
 
-  .brand-list-container--minimazed {
+  .brand-list-container--minimazed { /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!СВАЙПЕР__когда отключен!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     height: 185px;
   }
   
-  .brand-list-container--expanded {
+  .brand-list-container--expanded { /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!СВАЙПЕР__когда отключен!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     height: auto;
   }
 }
 
 @media (min-width: 1120px) {
-  .brand-list-container {
+  .brand-list-container { /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!СВАЙПЕР__когда отключен!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     padding: 24px 32px 0px 32px;
   }
 }
 
+.brand-list__swiper-slide {
 
+}
 
-
-.brand-card {
-  min-height: 72px;
-  width: 100%;
+.brand-card { /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!СВАЙПЕР!!!!СЛАЙД!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  min-height: 72px;  
   border: 1px solid #EAEAEA;
   border-radius: 6px;
   display: flex;
@@ -122,37 +113,49 @@ body {
   padding: 0 16px;
 }
 
-.brand-card__link {
+@media (min-width: 768px) {
+  .brand-card { /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!СВАЙПЕР!!!!СЛАЙД__когда отключен!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+.brand-card__link { /*********************************************НЕ СВАЙПЕР******************************/
   border-radius: 50%;
   height: 40px;
   width: 40px;
   background: url(assets/go.svg) no-repeat 50% 50%;
 }
 
-.brand-list__paginator {
+.brand-list__paginator { /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!СВАЙПЕР!!!!ПАГИНАТОР!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
   position: static;
   margin-bottom: 38px;
 }
 
-.swiper-pagination-bullet {
+@media (min-width: 768px) {
+  .brand-list__paginator { /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!СВАЙПЕР!!!!ПАГИНАТОР!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    display: none;
+  }
+}
+
+.swiper-pagination-bullet { /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!СВАЙПЕР!!!!ПАГИНАТОР!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
   width: 12px;
   height: 12px;
-  line-height: 20px;
-  font-size: 14px;
+  line-height: 12px;
   background-color: #b5b6bc;  
 }
 
-.repairing-brands__expand-button {
+.repairing-brands__expand-button { /*********************************************НЕ СВАЙПЕР******************************/
   margin: 24px 24px 34px 24px;
 }
 
 @media (min-width: 1120px) {
-  .repairing-brands__expand-button {
+  .repairing-brands__expand-button { /*********************************************НЕ СВАЙПЕР******************************/
     margin: 24px 32px 34px 32px;
   }
 }
 
-.expand-button {
+.expand-button { /*********************************************НЕ СВАЙПЕР******************************/
   display: none;
   align-items: center;
   padding-left: 32px;
@@ -170,16 +173,16 @@ body {
 }
 
 @media (min-width: 768px) {
-  .expand-button {
+  .expand-button { /*********************************************НЕ СВАЙПЕР******************************/
     display: flex;
   }
 }
 
-.expand-button--show {
+.expand-button--show { /*********************************************НЕ СВАЙПЕР******************************/
   background-image: url(assets/expand.svg);  
 }
 
-.expand-button--hide {
+.expand-button--hide { /*********************************************НЕ СВАЙПЕР******************************/
   background-image: url(assets/hide.svg);
   margin-bottom: 14px;
 }
