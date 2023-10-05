@@ -13,9 +13,9 @@
   const enableSwiper = function () {
     mySwiper = new Swiper(".swiper-container", {
       loop: false,
-      slidesPerView: "auto",
+      slidesPerView: 1.5,
       centeredSlides: true,
-      a11y: true,
+      // a11y: true,
       keyboardControl: true,
       grabCursor: true,
       pagination: ".swiper-pagination",

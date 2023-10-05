@@ -73,6 +73,30 @@ body {
   text-transform: uppercase;
 }
 
+.brand-list::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 24px;
+  height: 81px;
+  right: 0;
+  top: 12px;
+  z-index: 100;
+  background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.00) 100%);
+}
+
+.brand-list::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 24px;
+  height: 81px;
+  left: 0;
+  top: 12px;
+  z-index: 100;
+  background: linear-gradient(270deg, rgba(248, 248, 248, 0.00) 0%, #F8F8F8 83.16%);
+}
+
 @media (min-width: 768px) {
   .brand-list-container {
     display: grid;
