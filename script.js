@@ -13,13 +13,15 @@
   const enableSwiper = function () {
     mySwiper = new Swiper(".swiper-container", {
       loop: false,
-      slidesPerView: 1.5,
+      // slidesPerView: 1.5,
+      slidesPerView: "auto",
       centeredSlides: true,
       // a11y: true,
       keyboardControl: true,
       grabCursor: true,
       pagination: ".swiper-pagination",
       paginationClickable: true,
+      spaceBetween: 16,
     });
   };
   breakpoint.addListener(breakpointChecker);

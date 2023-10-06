@@ -122,6 +122,15 @@ body {
   }
 }
 
+.swiper-slide {
+  width: 240px;
+}
+
+@media (min-width: 768px) {
+  .swiper-slide {
+    width: auto;
+  }
+}
 
 .brand-card {
   min-height: 72px;  
@@ -132,15 +141,19 @@ body {
   justify-content: space-between;
   background-color: #FFF;
   padding: 0 16px;
+}
 
-  width: 82%;
-  margin: 16px auto;
+.brand-list__brand-card {
+  margin: 16px auto 12px auto;
 }
 
 @media (min-width: 768px) {
   .brand-card {
     width: 100%;
-    box-sizing: border-box;
+    box-sizing: border-box;    
+  }
+
+  .brand-list__brand-card {
     margin: 0;
   }
 }
@@ -154,7 +167,7 @@ body {
 
 .brand-list__paginator {
   position: static;
-  margin-bottom: 38px;
+  margin-bottom: 33px;
 }
 
 @media (min-width: 768px) {
